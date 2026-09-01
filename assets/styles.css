@@ -178,6 +178,9 @@ nav.links a:hover::after, nav.links a.active::after{width:100%;}
 .stat-card .stat b{font-family:'Exo 2',sans-serif; color:var(--blue); font-size:1.3rem;}
 .stat-card .stat span{color:var(--silver); font-size:0.85rem; text-align:right; max-width:60%;}
 .partner-note{margin-top:14px; color:var(--gunmetal); font-size:0.85rem; font-style:italic;}
+.service-area{margin-top:48px; padding:28px 30px; background:var(--charcoal); border:1px solid var(--gunmetal); border-left:3px solid var(--blue);}
+.service-area h3{font-size:1.1rem; color:var(--white); margin-bottom:10px;}
+.service-area p{color:var(--silver); font-size:0.94rem; margin:0;}
 
 /* Services */
 .svc-block{margin-bottom:52px;}
