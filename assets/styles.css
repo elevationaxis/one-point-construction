@@ -254,7 +254,7 @@ nav.links a:hover::after, nav.links a.active::after{width:100%;}
 .gallery-note{margin-top:18px; padding:16px 20px; border-left:3px solid var(--blue); background:var(--charcoal); color:var(--silver); font-size:0.88rem;}
 .recent-projects{margin-top:82px; padding-top:70px; border-top:1px solid var(--gunmetal);}
 .recent-projects .section-head{margin-bottom:32px;}
-.project-briefs{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:0 0 26px;}
+.project-briefs{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:20px; margin:0 0 26px;}
 .project-brief{position:relative; overflow:hidden; padding:28px; background:var(--charcoal); border:1px solid var(--gunmetal); border-top:3px solid var(--blue);}
 .project-brief::after{content:''; position:absolute; right:-46px; bottom:-70px; width:180px; height:180px; background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='56' viewBox='0 0 64 56'%3E%3Cpolygon points='16,0 48,0 64,28 48,56 16,56 0,28' fill='none' stroke='rgba(0,141,210,0.16)' stroke-width='1'/%3E%3C/svg%3E"); background-size:64px 56px; opacity:.6; transform:rotate(12deg); pointer-events:none;}
 .project-brief .eyebrow{position:relative; z-index:1; margin-bottom:6px;}
