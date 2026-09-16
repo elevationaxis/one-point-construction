@@ -640,15 +640,14 @@ details summary{transition:color 0.2s ease, padding-left 0.2s cubic-bezier(.2,.8
 .leader-card--alt .leader-info{order:1;}
 .leader-photo{
   position:relative;
-  min-height:100%;
+  align-self:start;
+  aspect-ratio:3/4;
   overflow:hidden;
   background:var(--jet);
 }
 .leader-photo img{
   width:100%;
   height:100%;
-  min-height:470px;
-  aspect-ratio:auto;
   object-fit:cover;
   border:0;
   transition:transform 0.55s cubic-bezier(.2,.8,.2,1), filter 0.55s ease;
@@ -756,7 +755,7 @@ details summary{transition:color 0.2s ease, padding-left 0.2s cubic-bezier(.2,.8
   .team-section{padding-top:56px;}
   .leader-card, .leader-card--alt{grid-template-columns:1fr;}
   .leader-card--alt .leader-photo, .leader-card--alt .leader-info{order:initial;}
-  .leader-photo{max-width:none; min-height:0;}
+  .leader-photo{max-width:none; min-height:0; aspect-ratio:auto;}
   .leader-photo img{height:clamp(320px,72vw,500px); min-height:0;}
   .leader-info{padding:34px 30px 32px;}
   .team-cta{padding:32px 30px;}
