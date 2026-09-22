@@ -260,6 +260,7 @@ nav.links a:hover::after, nav.links a.active::after{width:100%;}
 .project-brief .eyebrow{position:relative; z-index:1; margin-bottom:6px;}
 .project-brief h3{position:relative; z-index:1; font-size:1.12rem; margin-bottom:10px;}
 .project-brief p{position:relative; z-index:1; max-width:510px; margin:0; color:var(--silver); font-size:.92rem; line-height:1.65;}
+.project-photo-head{margin:48px auto 24px; padding-top:34px; border-top:1px solid var(--gunmetal);}
 .recent-project-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
 .recent-project-grid figure{position:relative; margin:0; overflow:hidden; border:1px solid var(--gunmetal); background:var(--charcoal);}
 .recent-project-grid img{width:100%; height:255px; object-fit:cover; transition:transform .4s ease;}
