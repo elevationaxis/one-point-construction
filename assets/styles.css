@@ -732,6 +732,18 @@ details summary{transition:color 0.2s ease, padding-left 0.2s cubic-bezier(.2,.8
 .leader-family--plain{display:block; padding:20px 0;}
 .advice-quote{margin-top:22px; padding-left:18px; font-size:0.95rem; line-height:1.55;}
 .advice-quote span{color:var(--silver);}
+.partner-testimonials{margin-top:66px; padding:58px 0 2px; border-top:1px solid var(--gunmetal);}
+.partner-testimonials .section-head{margin-bottom:30px;}
+.testimonial-grid{display:grid; grid-template-columns:minmax(0,1.22fr) minmax(0,0.78fr); gap:20px; align-items:start;}
+.testimonial-card{position:relative; margin:0; padding:30px 30px 26px; background:var(--charcoal); border:1px solid var(--gunmetal); border-top:3px solid var(--blue); overflow:hidden;}
+.testimonial-card::before{content:'“'; position:absolute; top:7px; right:20px; color:rgba(0,141,210,0.14); font-family:'Exo 2',sans-serif; font-size:7rem; font-weight:800; line-height:1; pointer-events:none;}
+.testimonial-card blockquote{position:relative; margin:0;}
+.testimonial-card blockquote p{position:relative; margin:0 0 18px; color:var(--silver); font-size:0.91rem; line-height:1.72;}
+.testimonial-card blockquote p:last-child{margin-bottom:0;}
+.testimonial-card figcaption{position:relative; display:grid; gap:2px; margin-top:25px; padding-top:18px; border-top:1px solid var(--gunmetal);}
+.testimonial-card figcaption strong{color:var(--white); font-family:'Exo 2',sans-serif; font-size:0.94rem; letter-spacing:0.03em; text-transform:uppercase;}
+.testimonial-card figcaption span{color:var(--blue); font-family:'Exo 2',sans-serif; font-size:0.72rem; font-weight:700; letter-spacing:0.075em; text-transform:uppercase;}
+.testimonial-card figcaption span + span{color:var(--silver);}
 .team-cta{
   display:flex;
   align-items:center;
@@ -750,6 +762,8 @@ details summary{transition:color 0.2s ease, padding-left 0.2s cubic-bezier(.2,.8
   .leader-card:hover .leader-tags span{border-color:var(--blue); color:var(--white);}
   .leader-card:hover .leader-tags span:nth-child(2){transition-delay:35ms;}
   .leader-card:hover .leader-tags span:nth-child(3){transition-delay:70ms;}
+  .testimonial-card{transition:transform 0.24s cubic-bezier(.2,.8,.2,1), border-color 0.24s ease, box-shadow 0.24s ease;}
+  .testimonial-card:hover{transform:translateY(-4px); border-color:var(--blue); box-shadow:0 16px 28px rgba(0,0,0,0.24);}
   .team-cta:hover{transform:translateY(-4px); border-color:var(--blue); box-shadow:0 16px 28px rgba(0,0,0,0.24);}
 }
 @media (max-width:900px){
@@ -759,6 +773,7 @@ details summary{transition:color 0.2s ease, padding-left 0.2s cubic-bezier(.2,.8
   .leader-photo{max-width:none; min-height:0; aspect-ratio:auto;}
   .leader-photo img{height:clamp(320px,72vw,500px); min-height:0;}
   .leader-info{padding:34px 30px 32px;}
+  .testimonial-grid{grid-template-columns:1fr;}
   .team-cta{padding:32px 30px;}
 }
 @media (max-width:620px){
@@ -766,6 +781,9 @@ details summary{transition:color 0.2s ease, padding-left 0.2s cubic-bezier(.2,.8
   .leader-family{grid-template-columns:1fr; gap:14px;}
   .leader-family img{height:auto; aspect-ratio:16/9;}
   .pull-quote{padding:20px 18px;}
+  .partner-testimonials{margin-top:52px; padding-top:48px;}
+  .testimonial-card{padding:26px 22px 22px;}
+  .testimonial-card blockquote p{font-size:0.89rem;}
   .team-cta{display:block; padding:28px 22px;}
   .team-cta .btn{margin-top:22px;}
 }
