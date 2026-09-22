@@ -404,7 +404,8 @@ footer{padding:56px 0 30px 0;}
   .cred-strip .sep{margin:0 10px;}
   .recent-projects{margin-top:56px; padding-top:52px;}
   .project-brief{padding:24px 22px;}
-  .recent-project-grid img,.recent-project-grid figure.portrait img{height:auto; aspect-ratio:4/3; object-fit:cover;}
+  .recent-project-grid img{height:auto; aspect-ratio:4/3; object-fit:cover;}
+  .recent-project-grid figure.portrait img{height:auto; aspect-ratio:auto; object-fit:contain; background:var(--jet);}
 }
 
 @media (max-width: 410px){
