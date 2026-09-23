@@ -1,4 +1,18 @@
 /* Design language: precise industrial confidence. Angular blue accents, measured contrast, and responsive motion that makes decisions feel intentional. */
+@font-face{
+  font-family:'Exo 2';
+  font-style:normal;
+  font-weight:600 800;
+  font-display:swap;
+  src:url('fonts/exo-2-latin.woff2') format('woff2');
+}
+@font-face{
+  font-family:'Raleway';
+  font-style:normal;
+  font-weight:400 700;
+  font-display:swap;
+  src:url('fonts/raleway-latin.woff2') format('woff2');
+}
 :root{
   --jet:#0B0B0D;
   --charcoal:#1A1D21;

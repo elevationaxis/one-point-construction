@@ -1,0 +1,14 @@
+/assets/img/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Netlify-CDN-Cache-Control: public, s-maxage=31536000
+
+/assets/fonts/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Netlify-CDN-Cache-Control: public, s-maxage=31536000
+
+/assets/styles.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Netlify-CDN-Cache-Control: public, s-maxage=86400
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
